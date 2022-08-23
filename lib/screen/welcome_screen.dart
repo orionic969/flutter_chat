@@ -56,36 +56,32 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                     height: 60.0,
                   ),
                 ),
-                AnimatedTextKit(
-                  animatedTexts: [
-                    FadeAnimatedText(
-                      'FlashChat',
-                      textStyle: TextStyle(
-                        fontSize: 45.0,
-                        color: Colors.black,
-                        fontWeight: FontWeight.w900,
-                      ),
-                    ),
-                  ],
-                ),
-                SizedBox(
-                  height: 48.0,
-                ),
-                RoundedButton(
-                  title: 'Log In',
-                  colour: Colors.lightBlueAccent,
-                  onPressed: () {
-                    Navigator.pushNamed(context, LoginScreen.id);
-                  },
-                ),
-                RoundedButton(
-                  title: 'Register',
-                  colour: Colors.blueAccent,
-                  onPressed: () {
-                    Navigator.pushNamed(context, RegistrationScreen.id);
-                  },
+                Text(
+                  'FlashChat',
+                  style: TextStyle(
+                    fontSize: 45.0,
+                    color: Colors.black,
+                    fontWeight: FontWeight.w900,
+                  ),
                 ),
               ],
+            ),
+            SizedBox(
+              height: 48.0,
+            ),
+            RoundedButton(
+              title: 'Log In',
+              colour: Colors.lightBlueAccent,
+              onPressed: () {
+                Navigator.pushNamed(context, LoginScreen.id);
+              },
+            ),
+            RoundedButton(
+              title: 'Register',
+              colour: Colors.blueAccent,
+              onPressed: () {
+                Navigator.pushNamed(context, RegistrationScreen.id);
+              },
             ),
           ],
         ),
@@ -93,4 +89,3 @@ class _WelcomeScreenState extends State<WelcomeScreen>
     );
   }
 }
-
